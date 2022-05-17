@@ -1,0 +1,36 @@
+body{
+  text-align:center;
+}
+
+h1{
+  background-color: blue
+}
+
+p{
+  text-align: center;
+  color:#4040a1
+}
+
+#Verdana{
+  font-family: Verdana
+}
+
+#Trebuchet{
+  font-family: Trebuchet
+}
+
+#ArialBlack{
+  font-family: "Arial Black"
+}
+
+#Aria{
+  font-family: "Aria"
+}
+
+#Tahoma{
+  font-family: Tahoma;
+}
+
+span{
+  font-size: 150%
+}

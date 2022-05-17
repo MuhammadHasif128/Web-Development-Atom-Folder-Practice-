@@ -1,0 +1,21 @@
+body{
+  font-family: verdana, sans-serif;
+  text-align:center;
+}
+
+hr{
+  height: 20px;
+  width: 70%;
+  background-color:green;
+}
+
+img{
+  height: 400px;
+  width: 300px
+  border: green;
+  border: 1px;
+}
+
+ol{
+  list-style-type: none;
+}

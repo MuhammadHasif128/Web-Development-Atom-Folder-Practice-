@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Practice Form</title>
+    <style>h1{text-align:Center;}</style>
+  </head>
+  <body>
+    <h1>Let us know how we can improve freeCodeCamp</h1>
+    <form action="index.html" method="post">
+      <fieldset style=color:Red border="2">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <hr>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter you Email" required>
+        <hr>
+        <label for="age">Age:</label>
+        <input type="number" name="age" value="age" min="1" max="120" required>
+        <hr>
+        <label for="phone number">Enter Your Phone Number</label>
+        <input type="tel" name="phone number" id="phone number" pattern="[0-9]{8}" required><br>
+        <small>Singapore Format +65</small>
+        <hr>
+        <label for="dropdown">Which option best desdcribes your current role</label>
+        <select class="Dropdown" name="dropdown" id="dropdown" value="Student">
+          <option value="Student">Student</option>
+        </select>
+        <hr>
+        <label for="rating">How likely is that you would recommend freeCodeCamp to a friend?</label><br>
+        <input type="radio" name="rating" id="rating" value="Definitely">Definitely<br>
+        <input type="radio" name="rating" id="rating" value="Maybe">Maybe<br>
+        <input type="radio" name="rating" id="rating" value="Not Sure">Not Sure<br>
+        <hr>
+        <label for="dropdownn">Which do you like most in FCC:</label>
+        <select class="Dropdownnn" name="dropdownn" id="dropdownn" value="Select an Option">
+          <option value="Select an option">Select an option</option>
+        </select>
+        <hr>
+        <label for="improvements">Things that should be improved in the future?</label><br>
+        <small>(Check all that apply)</small><br>
+        <input type="radio" name="improvments" id="improvements" value="Front-end Projects">Front-end Projects<br>
+        <input type="radio" name="improvements" id="improvements" value="Back-end Projects">Back-end Projects<br>
+        <input type="radio" name="improvements" id="improvements" value="Data Visualization">Data Visualization<br>
+        <hr>
+      </fieldset>
+    </form>
+    <input type="submit" name="submit" value="submit">
+  </body>
+</html>

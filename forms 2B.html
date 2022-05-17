@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hasif's Forms</title>
+    <link rel="stylesheet" href="storyForm.css">
+  </head>
+  <body>
+    <form action="FormProcessor2.html" method="GET">
+      <fieldset style=color:Red>
+        <legend>Personal Particulars</legend>
+        <label for="bdate">Birth Date:</label>
+        <input type="date" name="bdate" id="bdate" required>
+        <hr>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male" value="boy" required>Male<br>
+        <input type="radio" name="gender" id="female" value="girl" required>Female<br>
+        <hr>
+        <label for="diploma">Diploma in:</label>
+        <input list="Diploma" name="diploma" id="diploma" placeholder="NYP Courses" required>
+        <datalist id="Diploma">
+        <option value="Common ICT"></option>
+        <option value="Business & Financial Technology"></option>
+        <option value="Business Intelligence & Analytics (New Professional Competency Model"></option>
+        <option value="Cybersecurity & Digital Forensics"></option>
+        <option value="Infocomm Security"></option>
+        <option value="Infocomm Technology"></option>
+      </datalist>
+        <hr>
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email" placeholder="Please Input Your Email Address">
+        <hr>
+        <label for="contact">Contact Number:</label>
+        <input type="contact" name="contact" id="contact" placeholder="Your Phone Number" title="Please Enter 8 Digit Number" pattern="\d{8}" required>
+      </fieldset>
+      <hr>
+      <fieldset style="color:Red">
+        <label for="age">Most Preferred Age:</label>
+        <input type="number" name= "id" id="age" min="1" max="120" required> Years Old
+        <hr>
+        <label for="color">Favourite Color:</label>
+        <input type="color" name="color" id="color" required>
+        <hr>
+        <label for="activity">Preferred Activity:</label>
+        <select class="Activity" name="activity" id=activity value="swimming" required>
+          <option value="Swimming">Swimming</option>
+        </select>
+        <hr>
+        <label for="website">Favourite Website:</label>
+        <input type="url" name="website" id=website placeholder="http://www.google.sg" required>
+        <hr>
+        <label for="location">Favourite Holiday Location</label>
+        <input type="location" name="location" id="location" required>
+      </fieldset>
+        <input type="submit" name="submit" value="submit"52556>
+    </form>
+  </body>
+</html>
