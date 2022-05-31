@@ -1,0 +1,69 @@
+<!--form inputing data, fieldset is the line around the form, name of the fieldset. 2 section need 2 field sets. ></input>. radio aka radio button (choose one option) & checkbox (choose more than one). Placeholder is like a helping tool so uk what to write. so many input types. can google. to get the box is input type text. input list = list of stuff. learn the diff "types". title warning use this "/"-->
+
+<!--every element should have an id and date. Best practice.
+ID's must be unique, cannot follow the name
+Value = whatever you want to be in the database.
+Value = if you click the radio boy, Gender ="Boy"
+Some cases no value esp date because it depends on the value the user enter. changeable values
+to not get confused, keep name and ID constant for now-->
+<!--id not needed if user no need to key in any value.
+Input type date will give a calendar-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="storyForm.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hasif's forms</title>
+</head>
+<body>
+  <form action="FormProcessor2.html" method="get">
+  <fieldset>
+      <legend>Personal Particular</legend>
+      <label for="bdate">Birth Date:</label>
+      <input type="date" name="bdate" id="bdate" required>
+      <hr>
+      <label for="gender">Gender:</label>
+      <input type="radio" name="gender" id="male" value="Male">Male<br>
+      <input type="radio" name="gender" id="female" value="Female">Female<br>
+      <hr>
+      <label for="diploma">Diploma in:</label>
+      <input list="Diplomas" name="diploma" id="diploma" placeholder="Courses" required></input>
+      <datalist id="Diplomas">
+      <option value="Common ICT">Common ICT</option>
+      <option value="Infocomm Security">Infocomm Security</option>
+      <option value="Infocomm Technology">Infocomm Technology</option>
+      </datalist>
+      <hr>
+      <label for="email">Email Address:</label>
+      <input type="email" name="email" id="email" placeholder="your email"></input>
+      <hr>
+      <label for="contact">Contact Number:</label>
+      <input type="contact" name="contact" id="contact" title = "8 Digits Telephone Number" placeholder="your contact number" maxlength="8" pattern="\d{8}" required></input>
+      <hr>
+  </fieldset>
+
+  <fieldset>
+      <legend>Preference</legend>
+      <label for="age">Most preferred age:</label>
+      <input type="range" name="age" value="17" min="1", max="120">years old</input>
+      <hr>
+      <label for="color">Favourite Color:</label>
+      <input type="color" name="color" id="color" value="black">
+      <hr>
+      <label for="activity">Preferred Activity:</label>
+      <select name="activity" name="activity" id="activity" value="Swimming"><option value="Swimming">Swimming</option></select>
+      <hr>
+      <label for="website">Favourite Website</label>
+      <input type="url" name="website" placeholder="http://www.google.com">
+      <hr>
+      <label for="location">Favourite holiday location:</label>
+      <input type="location" name="location">
+  </fieldset>
+      <hr>
+  <input type="submit" name= "submit" value="submit">
+  </form>
+</body>
+</html>
